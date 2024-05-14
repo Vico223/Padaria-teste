@@ -135,7 +135,7 @@ INSERT INTO insumo (FornecedorID, FornecimentoID, Tipo, Valor)
 VALUES (2, 2, 'Leite Pasteurizado', 5.75);
 
 INSERT INTO funcionario (Nome, Endereco, Cpf, Cargo, PadariaID)
-VALUES ('Joana Silva', 'Rua das Flores, 200', '000.111.222-33', 'パン職人 (Pan Shokunin - Baker)', 1);
+VALUES ('Joana Silva', 'Rua das Flores, 200', '000.111.222-33', 'carlos', 1);
 INSERT INTO funcionario (Nome, Endereco, Cpf, Cargo, PadariaID)
 VALUES ('Miguel Souza', 'Avenida Brasil, 900', '111.222.333-44', 'Atendente', 2);
 
@@ -144,6 +144,24 @@ VALUES (1, 1, 1, 'Pão Francês', '2024-05-11', '2024-05-14', 'Baguete');
 
 INSERT INTO produto (FuncionarioID, EstoqueID, FornecimentoID, ProducaoID, Nome, Preco, Quantidade)
 VALUES (2, 3, NULL, 3, 'Pão Doce', 2.20, 12);
+
+INSERT INTO cliente (PadariaID, Nome, Cpf, Endereco, Telefone)
+VALUES (1, 'João Silva', '123.456.789-00', 'Rua das Flores, 200', '(83) 3211-9876');
+
+INSERT INTO pedido (ClienteID, ProdutoID, PadariaID, Data_Pedido, Valor)
+VALUES (1, 3, 1, '2024-05-14', 12.50);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
